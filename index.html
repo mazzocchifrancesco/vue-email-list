@@ -14,10 +14,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <div id="app">
+        <!-- <p v-if="i=3" v-for="(emailX, i) in email">{{email}}</p> -->
+        <p>{{email}}</p>
+        <div @click="genera()" class="btn btn-secondary">PREMI</div>
+        <div>{{contatore}}</div>
+    </div>
 
-
-    
-    
     <script src="js/main.js"></script>
 </body>
 </html>
