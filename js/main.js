@@ -4,20 +4,26 @@ const object = {
     data: function () {
         return {
             email: [],
-            contatore:0
+            contatore: 0
         }
     },
+
     methods: {
-        genera() {
+
+        },
+
+    mounted() {
+        for (let i = 0; i <10; i++) {
+
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(r => {
                 if (r.data.success) {
                     this.email.push(r.data.response);
-                }
-            })
-            this.contatore++
-        }
+                };
+                this.contatore++
 
-    },
+            });
+        }
+    }
 
 };
 

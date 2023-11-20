@@ -16,9 +16,10 @@
 <body>
     <div id="app">
         <!-- <p v-if="i=3" v-for="(emailX, i) in email">{{email}}</p> -->
-        <p>{{email}}</p>
-        <div @click="genera()" class="btn btn-secondary">PREMI</div>
-        <div>{{contatore}}</div>
+        <ul v-if="contatore==10">
+            <li v-for="(elemento, i) in email">{{email[i]}}</li>
+        </ul>
+        <p>{{contatore}}</p>
     </div>
 
     <script src="js/main.js"></script>
